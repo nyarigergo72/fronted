@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telekocsi</title>
+    <link rel="stylesheet" type="text/css" href="telekocsi.css">
+    <script>
+        function mentes() {
+            jel1 = document.getElementById("jelszo1").value;
+            jel2 = document.getElementById("jelszo2").value;
+            if (jel1 != "" && jel2 != "") {
+                if (jel1 == jel2) {
+                    alert("A beírt jelszók megegyeznek");
+                }
+                else {
+                    alert("A beírt jelszók nem egyeznek meg");
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="tartalom">
+        <h1>Telekocsi</h1>
+        <div class="menu">
+            <ul>
+                <li><a href="telekocsi.html">
+                        Bemutatkozás
+                    </a></li>
+                <li>Sofőröknek</li>
+                <li> Utasoknak</li>
+                <li>Bejelentkezés</li>
+                <li> Regisztráció</li>
+            </ul>
+        </div>
+        <h2>Regisztráció</h2>
+        <form class="url">
+            <div class="urlap">
+                <div class="doboz">
+                    <div class="bal">
+                        <label for="nev">Név:</label>
+                    </div>
+                    <div class="jobb">
+                        <input type="text" id="nev">
+                    </div>
+                </div>
+
+                <div class="doboz">
+                    <div class="bal">
+                        <label for="email">Email cím:</label>
+                    </div>
+                    <div class="jobb">
+                        <input type="text" id="email">
+                    </div>
+                </div>
+
+                <div class="doboz">
+                    <div class="bal">
+                        <label for="jelszo1">Jelszó:</label>
+                    </div>
+                    <div class="jobb">
+                        <input type="password" id="jelszo1">
+                    </div>
+                </div>
+
+                <div class="doboz">
+                    <div class="bal">
+                        <label for="jelszo2">Jelszó:</label>
+                    </div>
+                    <div class="jobb">
+                        <input type="password" id="jelszo2">
+                    </div>
+                </div>
+                <input type="button" value="Mentés" onclick="mentes()">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

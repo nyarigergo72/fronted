@@ -1,0 +1,60 @@
+body{
+    background-color:blue;
+}
+.tartalom{
+    width: 1200px;
+    margin: 0 auto;
+    border: 2px darkgrey solid;
+    padding: 10px;
+    background-color:lightblue;
+}
+h1{
+    text-align: center;
+    text-decoration: underline;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+p{
+    text-align: justify;
+}
+.auto{
+    width: 250px;
+    float: right;
+    margin-left: 20px;
+}
+.kiemelt{
+    font-weight: bold;
+    color: red;
+}
+.forras{
+    text-align: right;
+}
+.menu{
+    background-color:blue;
+    padding: 10px;
+}
+.menu li{
+    display: inline-block;
+     width: 100px;
+    
+}
+.menu a{
+    color: yellow;
+   
+}
+.urlap{
+    width: 300px;
+    margin-left: 100px;
+   
+}
+.doboz{
+     display: inline-block;
+}
+.bal{
+    float: left;
+    width: 150px;
+}
+.jobb{
+    float: right;
+    width: 150px;
+}
